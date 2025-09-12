@@ -5,6 +5,8 @@ const aiRoutes=require('./src/routes/ai.routes');
 
 const app = express(); // server is created 
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
