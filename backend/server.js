@@ -1,9 +1,12 @@
 const express = require('express');
 require('dotenv').config();
 const aiRoutes=require('./src/routes/ai.routes');
+const cors = require('cors');
 
 
 const app = express(); // server is created 
+
+app.use(cors());
 
 app.use(express.json());
 
